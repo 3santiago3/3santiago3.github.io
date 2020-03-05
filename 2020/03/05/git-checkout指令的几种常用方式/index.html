@@ -7,18 +7,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签: Docker - Be happy and do what you want to do</title>
+<title>git checkout 指令的几种常用方式 - Be happy and do what you want to do</title>
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Be happy and do what you want to do">
-<meta property="og:url" content="https://3santiago3.github.io/tags/Docker/index.html">
+    <meta name="description" content="1. 切换分支初始状态：  执行命令： 1$ git checkout testing">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git checkout 指令的几种常用方式">
+<meta property="og:url" content="https://3santiago3.github.io/2020/03/05/git-checkout%E6%8C%87%E4%BB%A4%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E6%96%B9%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Be happy and do what you want to do">
+<meta property="og:description" content="1. 切换分支初始状态：  执行命令： 1$ git checkout testing">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://3santiago3.github.io/images/og_image.png">
+<meta property="og:image" content="https://3santiago3.github.io/images/git-checkout%E6%8C%87%E4%BB%A4%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E6%96%B9%E5%BC%8F/thumbnail.jpg">
+<meta property="article:published_time" content="2020-03-04T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-03-05T14:33:59.032Z">
 <meta property="article:author" content="3santiago3">
+<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://3santiago3.github.io/images/og_image.png">
+<meta name="twitter:image" content="https://3santiago3.github.io/images/git-checkout%E6%8C%87%E4%BB%A4%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E6%96%B9%E5%BC%8F/thumbnail.jpg">
 
 
 
@@ -112,6 +117,10 @@
                     
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -125,41 +134,26 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">Docker</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 <div class="card">
     
     <div class="card-image">
-        <a href="/2020/02/18/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="image is-7by1">
-            <img class="thumbnail" src="/images/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/thumbnail.jpg" alt="Docker 学习笔记">
-        </a>
+        <span  class="image is-7by1">
+            <img class="thumbnail" src="/images/git-checkout%E6%8C%87%E4%BB%A4%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E6%96%B9%E5%BC%8F/thumbnail.jpg" alt="git checkout 指令的几种常用方式">
+        </span>
     </div>
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-02-17T16:00:00.000Z">2020-02-18</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E8%BF%90%E7%BB%B4/">运维</a>
-                </div>
+                <time class="level-item has-text-grey" datetime="2020-03-04T16:00:00.000Z">2020-03-05</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    19 分钟 读完 (大约 2776 个字)
+                    5 分钟 读完 (大约 786 个字)
                 </span>
                 
                 
@@ -168,24 +162,69 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/02/18/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Docker 学习笔记</a>
+                git checkout 指令的几种常用方式
             
         </h1>
         <div class="content">
-            <h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h2><p><a href="https://www.docker.com/">Docker 官网</a></p>
-<p><img src="/images/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Docker.png" alt="Docker"></p>
-<p>Docker 是一个 2013 年开源的应用容器引擎，基于 Go 语言。</p>
-<p>Docker 可以让开发者可以打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。</p>
+            <h2 id="1-切换分支"><a href="#1-切换分支" class="headerlink" title="1. 切换分支"></a>1. 切换分支</h2><p>初始状态：</p>
+<p><img src="/images/git-checkout%E6%8C%87%E4%BB%A4%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E6%96%B9%E5%BC%8F/head-to-master.png" alt="head-to-master"></p>
+<p>执行命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout testing</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p><img src="/images/git-checkout%E6%8C%87%E4%BB%A4%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E6%96%B9%E5%BC%8F/head-to-testing.png" alt="head-to-testing"></p>
+<p>这条命令做了两件事。 一是使 HEAD 指向 master 分支，二是将工作目录恢复成 master 分支所指向的快照内容。</p>
+<h2 id="2-创建并切换分支"><a href="#2-创建并切换分支" class="headerlink" title="2. 创建并切换分支"></a>2. 创建并切换分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b iss53</span><br></pre></td></tr></table></figure>
+
+<p>这条命令是下面两条命令的简写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch iss53</span><br><span class="line">$ git checkout iss53</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-分离头指针"><a href="#3-分离头指针" class="headerlink" title="3. 分离头指针"></a>3. 分离头指针</h2><ol>
+<li><p>现有一个仓库，当前在 master 分支上，有三次提交记录：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git log --graph --all --oneline  --decorate</span><br><span class="line">* 2950c9d (HEAD -&gt; master) c</span><br><span class="line">* a61ae27 b</span><br><span class="line">* 1ef09c2 a</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>当你想做一些尝试性的更新，并且可能随时丢弃新增的代码时，可以将仓库处于分离头指针状态下。例如，我想在提交 b（a61ae27）基础下做试验：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout a61ae27</span><br><span class="line">Note: checking out &#39;a61ae27&#39;.</span><br><span class="line"></span><br><span class="line">You are in &#39;detached HEAD&#39; state. You can look around, make experimental</span><br><span class="line">changes and commit them, and you can discard any commits you make in this</span><br><span class="line">state without impacting any branches by performing another checkout.</span><br><span class="line"></span><br><span class="line">If you want to create a new branch to retain commits you create, you may</span><br><span class="line">do so (now or later) by using -b with the checkout command again. Example:</span><br><span class="line"></span><br><span class="line">  git checkout -b &lt;new-branch-name&gt;</span><br><span class="line"></span><br><span class="line">HEAD is now at a61ae27... b</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看分支列表，HEAD 指向了提交 b（a61ae27），处于分离头指针状态：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br><span class="line">* (HEAD detached at)</span><br><span class="line">  master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>然后修改代码，并且添加到暂存区和提交它，此时 HEAD 指向了提交 d（d605ebb）：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git log --graph --all --oneline  --decorate</span><br><span class="line">* d605ebb (HEAD) d</span><br><span class="line">| * 2950c9d (master) c</span><br><span class="line">|&#x2F;</span><br><span class="line">* a61ae27 b</span><br><span class="line">* 1ef09c2 a</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>要注意的是，此时是没有任何东西正在引用提交 d（d605ebb），<strong>如果你此时切换到其他分支，那么这部分修改的代码会被 Git 垃圾回收</strong>。</p>
+</li>
+<li><p>如果你对你的试验满意，那么你可以通过创建一个分支或者标签指向提交 d（d605ebb）来保留修改的内容:</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b foo</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>但是，如果你一不小心在新建分支之前切换了分支，使得修改的内容被 Git 回收了，也不用着急，可以通过 reflog 指令来找回提交 d（d605ebb）：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout master</span><br><span class="line">Warning: you are leaving 1 commit behind, not connected to</span><br><span class="line">any of your branches:</span><br><span class="line"></span><br><span class="line">  d605ebb d</span><br><span class="line"></span><br><span class="line">If you want to keep it by creating a new branch, this may be a good time</span><br><span class="line">to do so with:</span><br><span class="line"></span><br><span class="line"> git branch &lt;new-branch-name&gt; d605ebb</span><br><span class="line"></span><br><span class="line">Switched to branch &#39;master&#39;</span><br></pre></td></tr></table></figure>
+
+<p> 其实已经可以根据 Git 给出的提示直接创建新分支了。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git reflog</span><br><span class="line">b990217 HEAD@&#123;0&#125;: checkout: moving from d605ebb783e029edb0193a6b6c9165c4e092462e to master</span><br><span class="line">d605ebb HEAD@&#123;1&#125;: commit: d</span><br><span class="line">a61ae27 HEAD@&#123;2&#125;: checkout: moving from master to a61ae27</span><br><span class="line">2950c9d HEAD@&#123;5&#125;: commit: c</span><br><span class="line">a61ae27 HEAD@&#123;6&#125;: commit: b</span><br><span class="line">1ef09c2 HEAD@&#123;7&#125;: commit (initial): a</span><br></pre></td></tr></table></figure>
+
+<p> 最后执行以下命令即可：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b foo</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="4-撤消对文件的修改"><a href="#4-撤消对文件的修改" class="headerlink" title="4. 撤消对文件的修改"></a>4. 撤消对文件的修改</h2><p>当你修改内容之后，却又不想保留，就可以使用以下命令来撤销：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -- file.text</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意</strong>：要加上 – 表示撤销文件修改，来跟切换分支和分离头指针做区分。</p>
+
         </div>
         
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2020/02/18/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#more">阅读更多</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Git/" rel="tag">Git</a>
                 </div>
             </div>
         </div>
+        
         
         
     </div>
@@ -193,9 +232,50 @@
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/images/alipay_qrcode.jpg" alt="支付宝"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/wechat_qrcode.jpg" alt="微信"></div>
+</a>
+
+                
+        </div>
+    </div>
+</div>
 
 
 
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/02/18/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                <span class="level-item">Docker 学习笔记</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 </div>
@@ -340,6 +420,34 @@
         <div class="column-right-shadow is-hidden-widescreen is-sticky">
         
             
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#1-切换分支">
+        <span class="has-mr-6">1</span>
+        <span>1. 切换分支</span>
+        </a></li><li>
+        <a class="is-flex" href="#2-创建并切换分支">
+        <span class="has-mr-6">2</span>
+        <span>2. 创建并切换分支</span>
+        </a></li><li>
+        <a class="is-flex" href="#3-分离头指针">
+        <span class="has-mr-6">3</span>
+        <span>3. 分离头指针</span>
+        </a></li><li>
+        <a class="is-flex" href="#4-撤消对文件的修改">
+        <span class="has-mr-6">4</span>
+        <span>4. 撤消对文件的修改</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
         
             <div class="card widget">
     <div class="card-content">
@@ -488,6 +596,34 @@
 <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
     
         
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#1-切换分支">
+        <span class="has-mr-6">1</span>
+        <span>1. 切换分支</span>
+        </a></li><li>
+        <a class="is-flex" href="#2-创建并切换分支">
+        <span class="has-mr-6">2</span>
+        <span>2. 创建并切换分支</span>
+        </a></li><li>
+        <a class="is-flex" href="#3-分离头指针">
+        <span class="has-mr-6">3</span>
+        <span>3. 分离头指针</span>
+        </a></li><li>
+        <a class="is-flex" href="#4-撤消对文件的修改">
+        <span class="has-mr-6">4</span>
+        <span>4. 撤消对文件的修改</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
     
         <div class="card widget">
     <div class="card-content">
